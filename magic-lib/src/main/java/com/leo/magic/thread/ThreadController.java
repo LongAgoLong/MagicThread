@@ -4,11 +4,6 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 
-/**
- * @author Leo
- * @date 2018/5/9
- */
-
 public class ThreadController {
     private static final HandlerThread mHandlerThread = new HandlerThread("Thread BackGround");
     private static final Handler mBackHandler;

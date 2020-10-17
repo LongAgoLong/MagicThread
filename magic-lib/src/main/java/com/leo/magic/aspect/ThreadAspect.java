@@ -1,7 +1,8 @@
 package com.leo.magic.aspect;
 
-import android.arch.lifecycle.LifecycleOwner;
 import android.util.Log;
+
+import androidx.lifecycle.LifecycleOwner;
 
 import com.leo.magic.annotation.MagicThread;
 import com.leo.magic.thread.LifeCycleController;

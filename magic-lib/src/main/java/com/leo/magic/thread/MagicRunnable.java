@@ -1,12 +1,6 @@
 package com.leo.magic.thread;
 
-import android.support.annotation.CallSuper;
-
-/**
- *
- * @author Leo
- * @date 2018/5/10
- */
+import androidx.annotation.CallSuper;
 
 public abstract class MagicRunnable implements Runnable {
     private Thread mThread;
@@ -16,7 +10,7 @@ public abstract class MagicRunnable implements Runnable {
             mThread.interrupt();
         }
     }
-    
+
     @CallSuper
     @Override
     public void run() {
