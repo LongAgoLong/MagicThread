@@ -1,7 +1,7 @@
 package com.leo.magic;
 
 public enum ThreadMode {
-    UI,
+    MAIN,
     IO,
     CALC,
     BACKGROUND

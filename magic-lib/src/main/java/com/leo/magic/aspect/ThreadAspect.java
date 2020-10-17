@@ -40,7 +40,7 @@ public class ThreadAspect {
         int delayMillisecond = annotation.delayMillisecond();
         if (!Thread.currentThread().isInterrupted()) {
             switch (threadMode) {
-                case UI:
+                case MAIN:
                     ThreadController.runOnUIThread(getRunnable(joinPoint), delayMillisecond);
                     break;
                 case IO:

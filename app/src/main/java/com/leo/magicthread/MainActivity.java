@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
         Log.e("-----", "跳出循环");
     }
 
-    @MagicThread(threadMode = ThreadMode.UI)
+    @MagicThread(threadMode = ThreadMode.MAIN)
     private void showProgress(int progress) {
         Log.e("-----" + Thread.currentThread().getName(), "showProgress: " + progress);
         mTvTest.setText(progress + "%");
     }
 
-    @MagicThread(threadMode = ThreadMode.UI, delayMillisecond = 12000)
+    @MagicThread(threadMode = ThreadMode.MAIN, delayMillisecond = 12000)
     public void delayToast() {
         Toast.makeText(this, "延迟成功", Toast.LENGTH_LONG).show();
     }
