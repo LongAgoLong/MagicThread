@@ -12,5 +12,5 @@ import com.leo.magic.ThreadMode;
 public @interface MagicThread {
     int delayMillisecond() default 0;
 
-    ThreadMode threadMode() default ThreadMode.IO;
+    ThreadMode threadMode();
 }
